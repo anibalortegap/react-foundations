@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { render } from '@testing-library/react';
+
+//Create functional component
+function MiComponente() {
+  return <p>Hola Mundo</p>;
+}
+
+//Create class component
+
+class MiComponenteDeClase extends Component {
+  render() {
+    return <p>Hola Mundo - Componente de clase</p>;
+  }
+}
 
 function App() {
   return (
@@ -19,6 +33,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <MiComponente />
+      <MiComponenteDeClase />
     </div>
   );
 }
