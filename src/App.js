@@ -9,11 +9,21 @@ function MiComponente() {
 }
 
 //Create class component
-
 class MiComponenteDeClase extends Component {
   render() {
     return <p>Hola Mundo - Componente de clase</p>;
   }
+}
+
+//Use Props - functional Props
+//Component A
+function A(props) {
+  return <p>Hola {props.name}</p>;
+}
+
+//Component B
+function B(props) {
+  return <p>{props.name}: 10</p>;
 }
 
 function App() {
@@ -35,6 +45,9 @@ function App() {
       </header>
       <MiComponente />
       <MiComponenteDeClase />
+
+      <A name="Anibal" />
+      <B name="Anibal" />
     </div>
   );
 }
