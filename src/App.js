@@ -4,6 +4,7 @@ import Exercise2 from './exercise-two';
 import Contador from './exercise-three';
 import Formulario from './exercise-four';
 import Blog from './exercise-five';
+import ContadorHooks from './exercise-six';
 
 //Create functional component
 function MiComponente() {
@@ -45,6 +46,7 @@ function App() {
       <Contador></Contador>
       <Formulario></Formulario>
       <Blog></Blog>
+      <ContadorHooks></ContadorHooks>
     </div>
   );
 }

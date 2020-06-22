@@ -38,7 +38,7 @@ class Blog extends Component {
         <div>
           {this.state.articlesFetch.map((article) => {
             return (
-              <div className="card" style={{ backgroundColor: 'blue' }}>
+              <div className="card" style={{ backgroundColor: '#62dafb' }}>
                 <p>{article.title}</p>
               </div>
             );
