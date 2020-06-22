@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { render } from '@testing-library/react';
+import Exercise2 from './exercise-two';
 
 //Create functional component
 function MiComponente() {
@@ -17,11 +16,13 @@ class MiComponenteDeClase extends Component {
 
 //Use Props - functional Props
 //Component A
+//Independent components
 function A(props) {
   return <p>Hola {props.name}</p>;
 }
 
 //Component B
+//Independent components
 function B(props) {
   return <p>{props.name}: 10</p>;
 }
@@ -29,25 +30,15 @@ function B(props) {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <MiComponente />
       <MiComponenteDeClase />
 
       <A name="Anibal" />
       <B name="Anibal" />
+      <Exercise2>
+        <p>Hola!</p>
+        <p>{10 + 20}</p>
+      </Exercise2>
     </div>
   );
 }
