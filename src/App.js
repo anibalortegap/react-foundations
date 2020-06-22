@@ -3,6 +3,7 @@ import './App.css';
 import Exercise2 from './exercise-two';
 import Contador from './exercise-three';
 import Formulario from './exercise-four';
+import Blog from './exercise-five';
 
 //Create functional component
 function MiComponente() {
@@ -43,6 +44,7 @@ function App() {
       </Exercise2>
       <Contador></Contador>
       <Formulario></Formulario>
+      <Blog></Blog>
     </div>
   );
 }
