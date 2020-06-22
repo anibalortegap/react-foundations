@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './App.css';
 class Blog extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +37,11 @@ class Blog extends Component {
         </div>
         <div>
           {this.state.articlesFetch.map((article) => {
-            return <p>{article.title}</p>;
+            return (
+              <div className="card" style={{ backgroundColor: 'blue' }}>
+                <p>{article.title}</p>
+              </div>
+            );
           })}
         </div>
       </div>
