@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Exercise2 from './exercise-two';
 import Contador from './exercise-three';
+import Formulario from './exercise-four';
 
 //Create functional component
 function MiComponente() {
@@ -41,6 +42,7 @@ function App() {
         <p>{10 + 20}</p>
       </Exercise2>
       <Contador></Contador>
+      <Formulario></Formulario>
     </div>
   );
 }
